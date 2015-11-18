@@ -12,8 +12,7 @@ def main ():
 	#set variables for user input
 	input_file = sys.argv[1]
 	savename = sys.argv[2]
-	savename_2 = sys.argv[3]
-	scatter_save = sys.argv[4]
+	scatter_save = sys.argv[3]
 	
 	#set variable for the user inputted data
 	earthquake = upload_file(filename = input_file)
@@ -82,7 +81,7 @@ def scatter_plot(data, scatter_save):
     ax = fig.add_subplot(1,1,1)
     
     #set the background of the plot to represent an accurate map to coordinates
-    im = plt.imread('map_background_copy.jpg')
+    im = plt.imread('bin/data/map_background.jpg')
     implot = plt.imshow(im, extent=[-128, -120, 53, 59])
      
     #change plot size to focus in on region of interest and align the sides of the 
